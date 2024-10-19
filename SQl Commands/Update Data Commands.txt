@@ -1,0 +1,14 @@
+select * from Cources;
+
+-- Commands to update data in Column.
+Update Cources
+set name = 'Mohammad'
+where ID = 1;
+
+update Cources
+set name = 'Khaled', Salary = 10000
+where ID = 1; -- sehr sehr sehr sehr wichtig zu schreiben where ID.
+
+update Cources
+set Salary = Salary + 1000
+where Salary < 3000 and name = 'Khaled';

@@ -1,0 +1,23 @@
+
+--##################################
+--### The ORDER By keyword is used to sort the rsult set in ascending or descending order.
+-- SELECT COLUMN!; COLUMN
+-- FROM TABLE_NAME
+-- ORDER BY COLUMN1 ; COLUMN2 ASC/DESC:
+
+
+select ID, FirstName , MonthlySalary from Employees
+ where DepartmentID = 1
+ order by Firstname ; -- order from down to up
+
+ select ID, FirstName, MonthlySalary from Employees
+ where DepartmentID = 1
+ order by FirstName desc;
+
+  select ID, FirstName, MonthlySalary from Employees
+ where DepartmentID = 1
+ order by MonthlySalary desc; -- ofder from Up to Down.
+
+  select ID, FirstName, MonthlySalary from Employees
+ where DepartmentID = 1
+ order by FirstName ASC , MonthlySalary desc; -- fristname from down to up  , monthlySalary from up to down.

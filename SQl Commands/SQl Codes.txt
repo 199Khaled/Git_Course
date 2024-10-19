@@ -1,0 +1,25 @@
+
+--# Code to Add new Column #
+--use DB1;
+--Alter table Students
+--Add Gender char(1) not null;
+
+
+-- # Code to remane Column #.
+--use DB1;
+--exec sp_rename 'students.gender', 'Gendor' ,'column';
+
+
+--# Code to rename the Table #
+--use DB1;
+--exec sp_rename 'students', 'STD';
+
+--# Code to change the Data Type im Column #
+--ALTER TABLE STD
+--ALTER COLUMN NAME nvarchar(100) not null;
+
+--Alter Table STD
+--ALTER COLUMN  Phone nvarchar(25) not null;
+
+
+

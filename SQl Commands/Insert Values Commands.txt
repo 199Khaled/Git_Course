@@ -1,0 +1,73 @@
+
+select * from Cources;
+-- insert one Record at a time.
+
+insert into Cources
+values
+(1,'Khaled1','Electrice');
+
+--insert multiple Records at a time.
+
+insert into Cources
+values
+(2,'Khaled1','Electrice'),
+(3,'Khaled3','Electrice'),
+(4,'Khaled4','Electrice'),
+(5,'Khaled5','Electrice'),
+(6,'Khaled6','Electrice');
+
+-- insert only selected fields
+
+insert into Cources (ID, name)
+values
+(7,'Khaled7');
+
+--if you forget to insert not null field an error will occure.
+insert into Cources (ID)
+values(8);
+
+--if you forget to insert null field an error will occure.
+insert into Cources
+values
+(8,null, null);
+
+select * from Cources;
+
+--this will be excuted because i inserted null in Subject Column.
+insert into Cources
+values
+(8,'Khaled8', null);
+
+--delete from Cources;
+
+
+#####################
+
+select * from Departments;
+
+-- # ID will be generated automatically, when a new record is inserted into a table.
+insert into Departments
+values
+('serverce'),
+('Electric'),
+('Programmer'),
+('Markiting'),
+('Computer');
+
+print @@identity; -- This Commandline to Know wich ID number is now  (1 row affected) 9.
+
+-- wenn i delete the Data int the Table than starts the ID after previos ID .Will not start again from Zero. here we can use the condition (where).!!!
+delete from Departments;
+
+-- it deletes all Records and  ID will start again from Zero. but we don't can use the condition (where)!!!!   counter = 0;
+truncate table Departments;
+
+---------------------------------------
+-- # here we define Data for the Table instead in Design.
+create table Departments(
+  ID int identity (1,1) not null,
+  Name nvarchar(100) not null,
+  Primary key (ID)
+);
+
+select * from Departments;

@@ -1,0 +1,20 @@
+select * from Cources;
+
+delete from Cources
+where ID = 1;
+
+delete from Cources
+where Salary is null;
+
+
+-- # Code to delete Column# 
+--use DB1;
+--Alter Table STD
+--Drop Column Gendor;
+
+-- This Command to delete the Table and start the ID again from scratch
+-- Here cann't one use the Where statement!!!!!!!
+--just with delete we can use the Where Statement.
+
+   trancate Table TableName;
+

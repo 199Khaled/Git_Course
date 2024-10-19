@@ -1,0 +1,21 @@
+
+--#########################################
+--        Select As
+--#########################################
+
+select A = 5*2, B = 8*2 from Employees;
+
+select ID, FirstName + ' ' + LastName as FullName from Employees;
+
+select ID, FirstName, LastName, FullName = FirstName + ' ' + LastName from Employees ;
+
+select ID , FirstName, MonthlySalary / 2 from Employees;
+
+select ID, FirstName, MonthlySalary, YearlySalary = MonthlySalary * 12 from Employees;
+
+select ID, FullName = FirstName + ' ' + LastName, Age = DateDiff (year, DateOfBirth, getDate()) from Employees;
+
+
+select ID, FullName = FirstName + ' ' + LastName, Age = DateDiff (Month, DateOfBirth, getDate()) from Employees;
+
+select Today = getDate();

@@ -1,0 +1,34 @@
+
+select * from Cources;
+
+-- Command to Copy the Whole Table.
+select *
+into CourcesCopy2
+from Cources;
+
+-- Command to copy only ID, Name 
+select ID, Name
+into CourcesCopy3
+from Cources;
+
+--Command to Copy the Table Without Data.
+select *
+into CourcesCopy4
+from Cources
+where 5 = 6;
+-- No Data because 5 = 6 refers false, Therefor tha Table will Copied without data.
+select *from CourcesCopy4;
+
+
+#---- tow methode to copy 
+select* from Persons;
+
+select* from OldPersons;
+
+delete from OldPersons;
+
+-- with this Command can we insert The data that are in Table Persons into The Table Oldpersons
+-- the Oldpersons Table must be Already created in the database to insert data into.
+insert into OldPersons
+select * from Persons
+where age > 31;

@@ -1,0 +1,26 @@
+
+
+select * from Employees;
+
+select Employees.* from Employees;
+
+select ID, FirstName, LastName, MonthlySalary from Employees;
+select Id, firstname,DateOfBirth from Employees;
+
+select * from Departments;
+
+select * from Countries;
+
+--##########################################
+
+select DepartmentID from Employees;
+
+-- the SELECT DICTINCT statement is used to return only distinct (different) valeus.
+-- inside the table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct ) values.
+select distinct DepartmentID from Employees;
+
+select firstname from employees;
+select distinct firstname from employees;
+
+select FirstName, DepartmentID from Employees;
+select distinct FirstName, DepartmentID from Employees;

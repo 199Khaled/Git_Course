@@ -1,0 +1,29 @@
+
+--#########################################################
+--   select (Count or Avg or Sum or Max or Min)(column_name)
+--   From table_name
+--   where condition
+--##########################################################
+
+select TotalCount = count(MonthlySalary ),
+       TotalSum = sum(MonthlySalary),
+	   Average = Avg(MonthlySalary),
+	   MinSalary = Min(MonthlySalary),
+	   MaxSalary = Max(MonthlySalary)
+
+       from Employees;
+	   
+select TotalCount = count(MonthlySalary ),
+       TotalSum = sum(MonthlySalary),
+	   Average = Avg(MonthlySalary),
+	   MinSalary = Min(MonthlySalary),
+	   MaxSalary = Max(MonthlySalary)
+
+       from Employees where DepartmentID = 2;
+
+
+select * from Employees;
+
+select TotalEmployees = count (ID) from Employees;
+
+select ResignedEmployees = count(ExitDate) from Employees; --  Not count statement doesn't counts NULL just not null values.

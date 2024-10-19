@@ -1,0 +1,30 @@
+
+select * from Employees;
+
+select top 10 * from  Employees;                            -- returns 10% from the Data.
+
+select top 5 percent * from Employees;
+
+select MonthlySalary from employees
+order by MonthlySalary desc;
+
+select distinct MonthlySalary from Employees                 -- descending  from up to down.
+order by MonthlySalary desc;
+
+select distinct top 3 MonthlySalary from Employees           -- top 3 without duplicate
+order by MonthlySalary desc;
+
+
+select ID, Firstname ,LastName, MonthlySalary from Employees where MonthlySalary in
+(
+   select distinct top 3 MonthlySalary from Employees
+   order by Monthlysalary desc
+)
+order by MonthlySalary desc;
+
+select ID, Firstname ,LastName, MonthlySalary from Employees where MonthlySalary in
+(
+   select distinct top 3 MonthlySalary from Employees
+   order by Monthlysalary asc                                 -- ascending from down to up
+) 
+order by MonthlySala

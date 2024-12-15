@@ -1,0 +1,23 @@
+
+--Diese Anweisung stellt die Datenbank „KlinkDb“ aus einer Sicherungsdatei
+--(Backup-Datei) wieder her. Die Option WITH FILE = 2 gibt an, dass die zweite
+--Sicherung in der Backup-Datei verwendet werden soll, 
+--und REPLACE erlaubt das Ersetzen der existierenden Datenbank, falls diese bereits vorhanden ist.
+RESTORE DATABASE KlinkDb
+FROM DISK = 'C:\KlinkDB.bak'
+WITH FILE = 2, REPLACE;
+
+--Dieser Befehl zeigt die Details des Backups an,
+-- einschließlich des Typs, des Zeitpunkts und der Version.
+RESTORE HEADERONLY 
+FROM DISK = 'C:\KlinkDB.bak';
+
+--Mit REPLACE: Diese Option ermöglicht es dir,
+--die vorhandene Datenbank zu ersetzen, falls sie bereits existiert.
+RESTORE DATABASE YourDatabaseName
+FROM DISK = 'C:\path\to\your\backup.bak'
+WITH REPLACE;
+
+--Führe den folgenden Befehl aus, um zu überprüfen,
+--welche Rollen und Berechtigungen dein Konto in der Datenbank hat:
+EXEC sp_helplogins 'khaled Alawedat';

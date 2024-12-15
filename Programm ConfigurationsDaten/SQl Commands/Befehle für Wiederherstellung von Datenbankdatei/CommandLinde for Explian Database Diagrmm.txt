@@ -1,0 +1,4 @@
+USE VehicleMakesDB
+GO
+ALTER AUTHORIZATION ON DATABASE::VehicleMakesDB TO [sa]
+GO

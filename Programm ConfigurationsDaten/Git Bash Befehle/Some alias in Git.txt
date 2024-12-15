@@ -1,0 +1,14 @@
+[alias]
+    st = status
+    br = branch
+    cm = commit -m
+    lg = log --oneline --graph --decorate
+    df = diff
+    f = fetch
+    pl = pull
+    ps = push
+    co = checkout
+    mg = merge
+    rs = reset
+    rb = rebase
+    stash = stash push

@@ -1,0 +1,43 @@
+Wichtige Git-Befehle
+Grundlegende Git-Befehle
+
+git init:                       Erstellt ein neues Git-Repository im aktuellen Verzeichnis.
+
+git clone <repository-url>:     Klont ein bestehendes Repository von einer URL auf deinen lokalen Computer.
+
+git status:                     Zeigt den Status der Dateien im Repository an (z.B. Änderungen, die noch nicht gestaged oder committed wurden).
+
+git add <dateiname>:            Fügt eine Datei zum Staging-Bereich hinzu.
+
+git add .:                      Fügt alle Änderungen im aktuellen Verzeichnis zum Staging-Bereich hinzu.
+
+git commit -m "<Nachricht>":   Speichert die gestagten Änderungen mit einer Beschreibung.
+
+git push <remote> <branch>:   Überträgt die lokalen Commits zu einem entfernten Repository (z.B. git push origin main).
+
+git pull <remote> <branch>:   Holt die neuesten Änderungen vom entfernten Repository und integriert sie in den aktuellen Branch.
+
+git fetch:                    Holt Änderungen von einem entfernten Repository, ohne sie in den aktuellen Branch zu integrieren.
+
+git merge <branch>:          Führt die Änderungen von einem anderen Branch in den aktuellen Branch zusammen.
+
+git branch:                  Listet alle Branches im Repository auf. Fügt ein * vor dem aktuellen Branch hinzu.
+git checkout <branch>:        Wechselt zu einem anderen Branch.
+
+git branch <branchname>:      Erstellt einen neuen Branch mit dem angegebenen Namen.
+
+git remote -v:                Zeigt die konfigurierten Remote-Repositories und deren URLs an.
+
+Konfiguration
+git config --global user.name "<Name>":             Setzt den Benutzernamen für Git. Dieser Name wird in den Commits angezeigt.
+
+git config --global user.email "<E-Mail>":          Setzt die E-Mail-Adresse für Git. Diese E-Mail wird in den Commits angezeigt.
+
+git config --global core.editor "<editor>":         Setzt den Standard-Texteditor für Git (z.B. vim, nano, code für Visual Studio Code).
+
+git config --list:                                Listet alle Konfigurationen für Git auf.
+Hilfe
+
+git help <befehl>:                               Zeigt die Hilfe für einen bestimmten Git-Befehl an (z.B. git help commit).
+
+man git:                                        Öffnet die man-Seite für Git, die eine ausführliche Dokumentation enthält.

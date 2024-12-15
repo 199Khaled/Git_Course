@@ -1,0 +1,122 @@
+System- und Diagnosebefehle
+cmd
+
+
+Öffnet die Eingabeaufforderung (Command Prompt). Hier können Sie Windows-Befehle eingeben.
+powershell
+
+Startet PowerShell, ein erweitertes Befehlszeilen- und Skripting-Tool.
+msconfig
+
+Öffnet die Systemkonfiguration, wo Sie den Startprozess und Dienste verwalten können.
+dxdiag
+
+Startet das DirectX-Diagnosetool, um Informationen zu Grafiken und Sound zu erhalten.
+perfmon
+
+Öffnet den Leistungsmonitor, um die Systemleistung zu überwachen.
+eventvwr
+
+Startet den Ereignisanzeiger, um Protokolle von Systemereignissen und Fehlern zu sehen.
+
+-------------------------------------------------------------------------------------------------
+
+Systemeinstellungen
+control
+
+Öffnet die klassische Systemsteuerung.
+control printers
+
+Öffnet das Fenster Geräte und Drucker.
+control keyboard
+
+Einstellungen für Tastatureigenschaften öffnen (z. B. Wiederholrate).
+control mouse
+
+Öffnet die Maus-Einstellungen.
+intl.cpl
+
+Regionseinstellungen öffnen (Datum, Uhrzeit, Zahlenformat).
+sysdm.cpl
+
+Öffnet die Systemeigenschaften (z. B. für Computername, Leistung, Wiederherstellung).
+
+--------------------------------------------------------------------------------------------------
+
+Netzwerkbefehle
+ncpa.cpl
+
+firewall.cpl  für Firewall Configuration.
+
+Öffnet die Einstellungen für Netzwerkverbindungen.
+chrome, firefox, iexplore, edge
+
+Startet den angegebenen Webbrowser (falls installiert).
+mstsc
+
+Startet den Remote Desktop Client für den Zugriff auf entfernte PCs.
+ping
+
+Geben Sie z. B. ping google.com ein, um die Verbindung zu einer Website zu testen (in Kombination mit cmd).
+
+--------------------------------------------------------------------------------------------------------
+
+
+Programme und Tools
+notepad
+
+Öffnet den Texteditor (Notepad).
+calc
+
+Startet den Taschenrechner.
+mspaint
+
+Startet Paint, das einfache Bildbearbeitungsprogramm.
+explorer
+
+Öffnet den Windows-Datei-Explorer.
+taskmgr
+
+Startet den Task-Manager.
+regedit
+
+Öffnet den Registrierungseditor (Registry Editor). Seien Sie hier vorsichtig!
+
+----------------------------------------------------------------------------------------------------------
+
+Wartung und Sicherheitsbefehle
+cleanmgr
+
+Startet die Datenträgerbereinigung, um temporäre Dateien und andere Junk-Daten zu entfernen.
+services.msc
+
+Öffnet die Diensteverwaltung, um Windows-Dienste zu starten, zu stoppen oder zu konfigurieren.
+diskmgmt.msc
+
+Startet die Datenträgerverwaltung, um Laufwerke und Partitionen zu verwalten.
+control userpasswords2
+
+Erweiterte Benutzerkontenverwaltung.
+shutdown -s -t 0
+
+Fährt den PC sofort herunter. Ändern Sie -s zu -r, um einen Neustart durchzuführen.
+
+---------------------------------------------------------------------------------------------------------------
+
+Ordner und Systempfade
+%temp%
+
+Öffnet den Ordner für temporäre Dateien des aktuellen Benutzers.
+%appdata%
+
+Öffnet den Anwendungsdatenordner des aktuellen Benutzers.
+.
+
+Öffnet den Home-Ordner des aktuellen Benutzers.
+..
+
+Öffnet den übergeordneten Ordner des aktuellen Verzeichnisses.
+C:\
+
+Öffnet das Root-Verzeichnis von Laufwerk C:.
+

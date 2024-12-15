@@ -1,0 +1,12 @@
+-- # Command to backup on the disk without Differential # .
+--backup database DB1
+--to disk = 'C:\DB1.back';
+
+-- # Command to backup on the disk within Differential #.
+--backup database DB1
+--to disk = 'C:\DB1.back'
+--with Differential ;
+
+------# Command to Restore Database from disk Notiz {master} must be check in this Case !!!!!!#.
+--Restore database MyFirstDatabase
+--from disk = 'C:\MyFirstDatabase.back';

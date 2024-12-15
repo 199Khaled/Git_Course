@@ -1,0 +1,25 @@
+
+
+
+select * from Customers;
+select * from Orders;
+
+------------------INNER JOIN---------------------------
+select customers.CustomerID, Customers.Name, Orders.Amount
+from Customers Inner JOIN Orders
+ON Customers.CustomerID = Orders.CustomerID;
+
+------------------LEFT JOIN-----------------------------
+select Customers.CustomerID , Customers.Name, Orders.CustomerID
+from Customers left outer join Orders
+On Customers.CustomerID = orders.CustomerID;
+
+--------------------RIGHT JOIN-------------------------
+SELECT Customers.CustomerID, Customers.Name, Orders.Amount
+FROM Customers RIGHT OUTER JOIN Orders 
+ON Customers.CustomerID = Orders.CustomerID
+
+-----------------FULL JOIN----------------------------------
+SELECT Customers.CustomerID, Customers.Name, Orders.Amount
+FROM  Customers FULL OUTER JOIN Orders 
+ON Customers.CustomerID = Orders.CustomerID

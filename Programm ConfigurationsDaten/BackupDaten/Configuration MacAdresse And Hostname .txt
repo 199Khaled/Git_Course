@@ -1,0 +1,4 @@
+Hostname des Computers: Einfach und sicher für die meisten Szenarien, vor allem, wenn Sie nur sicherstellen möchten, dass das Backup nur auf einem bestimmten Computer erfolgt.
+MAC-Adresse des Geräts: Eine eindeutige Identifizierung des Geräts, die sicherstellt, dass nur das richtige Gerät Zugriff auf das Backup hat.
+Benutzerdefinierte Datei oder Datenbank: Flexibler Ansatz, der es ermöglicht, mehrere zugelassene Geräte zu verwalten.
+Jeder dieser Ansätze hat seine eigenen Vor- und Nachteile, aber die Verwendung des Hostnamens oder der MAC-Adresse ist eine sehr gängige und zuverlässige Methode, um sicherzustellen, dass nur bestimmte Geräte Backups durchführen können.

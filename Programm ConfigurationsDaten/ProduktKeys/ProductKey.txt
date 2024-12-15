@@ -1,0 +1,24 @@
+-- Daten einfügen
+INSERT INTO SchluesselTabelle (Schluessel, Erstellungsdatum, Ablaufdatum, Verwendet)
+VALUES
+
+(1, '20240101-HJ3K9L1F-ZX81TY', TotalMonate  =  1),
+(2, '20240129-GHF8JK2N-WE92RT', TotalMonate  =  1),
+(3, '20241212-KJ81XY5L-PQ23ZO', TotalMonate  =  2),
+(4, '20241219-BHF1ZL9K-MQ72YT', TotalMonate  =  3),
+(5, '20241226-TK39PL2X-VT68XZ', TotalMonate  =  1),
+(6, '20250102-JL82XK5Y-RQ17WL', TotalMonate  =  6),
+(7, '20250109-NF27XL1J-LW83RT', TotalMonate  =  6),
+(8, '20250116-RK48YL3T-ZQ62NM', TotalMonate  =  6),
+(9, '20250123-ZN51WK8P-TQ74XY', TotalMonate  =  12),
+(10, '20250130-QT67PL9X-NM58WY', TotalMonate  =  12),
+(11, '20250206-WK58TY2J-LQ94XM', TotalMonate  =  12),
+(12, '20250213-TJ49KL3Y-XQ83NL', TotalMonate  =  12),
+(13, '20250220-VL68NP4X-ZM72WX',TotalMonate  =  24),
+(14, '20250227-RM49ZK5Y-LN61TY', TotalMonate  =  24),
+(15, '20250305-TN58LQ6Z-WK91XY', TotalMonate  =  24),
+(16, '20250312-ZQ62MN7L-VQ82RM', TotalMonate  =  24),
+(17, '20250319-QW79LK2T-ZT74NM', TotalMonate  =  36),
+(18, '20250326-WN91QP5Z-RL83KT', TotalMonate  =  36),
+(19, '20250402-TL62NM8X-WT94ZX', TotalMonate  =  48),
+(20, '20250409-ZT58LQ3N-RM91XY', TotalMonate  =  96);

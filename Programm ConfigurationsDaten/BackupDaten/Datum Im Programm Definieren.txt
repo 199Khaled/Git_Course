@@ -1,0 +1,10 @@
+So fügst du das Datum in Properties.Settings hinzu:
+
+Rechtsklicke im Projektmappen-Explorer auf dein Projekt.
+Wähle Eigenschaften → Einstellungen.
+Füge eine neue Einstellung hinzu:
+Name: LetztesBackupDatum
+Typ: String
+Bereich: Benutzer
+Standardwert: (leer lassen)
+Beim nächsten Start wird die Einstellung automatisch gespeichert.

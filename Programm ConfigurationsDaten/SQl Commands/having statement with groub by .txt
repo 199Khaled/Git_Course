@@ -1,0 +1,43 @@
+The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions in a direct way.
+
+HAVING Syntax
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+
+
+select DepartmentID,TotalCount = count(MonthlySalary ),
+       TotalSum = sum(MonthlySalary),
+	   Average = Avg(MonthlySalary),
+	   MinSalary = Min(MonthlySalary),
+	   MaxSalary = Max(MonthlySalary)
+
+       from Employees
+	   group by DepartmentID
+	   having count (MonthlySalary) > 150 -- havin is where statement on Group by.
+	
+
+
+-- having is filteration for Group by 
+-- where is filteration for onther condition
+
+
+-- aonther soluation to use having but in
+
+select * from
+(
+select DepartmentID,TotalCount = count(MonthlySalary ),
+       TotalSum = sum(MonthlySalary),
+	   Average = Avg(MonthlySalary),
+	   MinSalary = Min(MonthlySalary),
+	   MaxSalary = Max(MonthlySalary)
+
+           from Employees
+	   group by DepartmentID   -- when we don't want to use having !!!!!!!!!
+) R1                               -- R1 here represents a new Table.
+
+where R1.TotalCount >= 130;        -- using where in Directory.

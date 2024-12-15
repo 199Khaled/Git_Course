@@ -1,0 +1,24 @@
+Git-Befehle für Remote-Repositories
+Befehl	Beschreibung
+git remote -v	                        Zeigt die aktuellen Remote-Repositories an.
+git remote add <name> <url>	        Fügt ein neues Remote-Repository mit einem Namen und einer URL hinzu.
+git remote remove <name>	        Entfernt das angegebene Remote-Repository.
+git remote set-url <name> <newurl>	Ändert die URL eines bestehenden Remote-Repositories.
+git push <remote> <branch>	       Überträgt lokale Commits auf den angegebenen Branch im Remote-Repository.
+git push -u <remote> <branch>	       Überträgt Commits und setzt den Remote-Branch als upstream.
+git pull <remote> <branch>	       Holt Änderungen vom Remote-Branch und integriert sie im aktuellen Branch.
+git fetch <remote>	               Holt alle Änderungen vom Remote-Repository, ohne sie zu integrieren.
+git clone <url>                 	Erstellt eine lokale Kopie eines Remote-Repositories.
+
+
+Git-Befehle für Branches
+Befehl	Beschreibung
+git branch	                    Zeigt alle lokalen Branches an.
+git branch <branch-name>	    Erstellt einen neuen Branch mit dem angegebenen Namen.
+git checkout <branch-name>	    Wechselt zu dem angegebenen Branch.
+git checkout -b <branch-name>       Erstellt einen neuen Branch und wechselt sofort zu ihm.
+git merge <branch-name>	Merged      den angegebenen Branch in den aktuellen Branch.
+git branch -d <branch-name>	    Löscht den angegebenen Branch (nur, wenn er gemerged wurde).
+git branch -D <branch-name>	    Löscht den angegebenen Branch (unabhängig von Merges).
+git reset --hard <commit>	    Setzt den aktuellen Branch auf den angegebenen Commit zurück und verwirft alle Änderungen.
+git rebase <branch-name>	    Wendet die Änderungen des aktuellen Branches auf den angegebenen Branch an.

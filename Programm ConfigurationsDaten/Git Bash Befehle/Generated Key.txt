@@ -1,0 +1,6 @@
+1 - ssh-keygen -t rsa -b 4096 -C "khaled.alawedat90@gmial.com     erstellt einen neuen Schlüssel.
+.
+2 -  cat ~/.ssh/id_rsa.pub             holt den Inhalt meins Schlüssel.
+
+3 -  ssh -T git@github.com            zum Testen nach dem Erstellen.
+  

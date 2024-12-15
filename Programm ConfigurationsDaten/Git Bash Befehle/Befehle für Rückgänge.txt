@@ -1,0 +1,9 @@
+ git clean -n	Zeigt an, welche Dateien durch den Befehl gelöscht werden würden (Vorschau).
+git clean -f	Entfernt unversionierte Dateien aus dem Arbeitsverzeichnis (führt den Löschvorgang aus).
+git clean -d	Entfernt unversionierte Verzeichnisse (nicht nur Dateien).
+git clean -df	Entfernt unversionierte Dateien und Verzeichnisse.
+git clean -x	Entfernt auch Dateien, die im .gitignore stehen, aber nicht versioniert sind.
+git clean -xf	Entfernt alle unversionierten Dateien, einschließlich der Dateien im .gitignore.
+git clean -i	Interaktiver Modus: Git fragt bei jeder Datei, ob sie gelöscht werden soll.
+git clean -q	Führt den git clean Befehl im "quiet" Modus aus, zeigt keine Ausgabe an.
+git restore .    Arbeitsverzeichnis zurücksetzen ……..

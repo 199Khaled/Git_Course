@@ -1,0 +1,32 @@
+
+
+select * from Employees;
+
+select DepartmentID from Employees where 
+( DepartmentID = 1 or DepartmentID = 7);
+
+select DepartmentID from Employees where -- this Commandline is short cut for or.
+ DepartmentID in (2, 5);
+
+ select distinct DepartmentID from Employees where
+ DepartmentID in (1, 7);
+
+
+ select * from Employees where 
+ DepartmentID in (7, 5);
+
+ select DepartmentID from Employees where MonthlySalary <= 210;
+
+ select Departments.Name from Departments where
+ ID in (select DepartmentID from Employees where MonthlySalary <= 210);
+
+
+  select Departments.Name from Departments where
+ ID not in (select DepartmentID from Employees where MonthlySalary <= 210);
+
+###############################
+    between Operator
+#############################
+
+select * from Employees where
+MonthlySalary between 500 and 1000;
